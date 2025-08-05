@@ -9,6 +9,10 @@ A sleek and responsive weather app that displays current weather data for any ci
 
 ---
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=render)](https://vinayjadhav163.github.io/Weather-App)
+
+---
+
 ## ✨ Features
 
 - 🌍 Search weather by city name  
