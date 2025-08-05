@@ -1,0 +1,290 @@
+/* Import Rubik font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Reset default styling and apply Rubik font */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Define CSS variables for theme colors */
+:root {
+  --font-color-main: #332464;
+  --white-color: #fff;
+}
+
+/* Body background */
+body {
+  background-color: #B4D6F3;
+}
+
+/* Main container styling */
+#screen {
+  background-color: #E0EEFA;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Bottom navigation bar */
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: var(--font-color-main);
+  z-index: 100;
+}
+
+/* Navigation list */
+nav ul {
+  display: flex;
+  gap: 2pc;
+}
+
+/* Navigation icons */
+nav ul li a {
+  color: var(--white-color);
+  font-size: 18px;
+}
+
+/* Highlight active nav item */
+.active {
+  background-color: var(--white-color);
+  color: var(--font-color-main);
+  border-radius: 100px;
+  padding: 8px 15px;
+}
+
+/* Heading styles */
+h3 {
+  color: var(--font-color-main);
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* Search bar container */
+.search {
+  width: 340px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 2px var(--font-color-main);
+  background-color: var(--white-color);
+}
+
+/* Search icon styling */
+.search-icon {
+  width: 18px;
+  height: 50px;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icon size and color */
+.search-icon i {
+  font-size: 18px;
+  color: var(--font-color-main);
+}
+
+/* Search input field */
+.search input {
+  width: 85%;
+  padding: 10px;
+  font-size: 15px;
+  color: var(--font-color-main);
+  border: none;
+  outline: none;
+}
+
+/* Search input placeholder color */
+.search input::placeholder {
+  color: var(--font-color-main);
+}
+
+/* Error message hidden by default */
+.error-message {
+  display: none;
+}
+
+/* Error message content style */
+.error-message p {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color-main);
+  text-align: center;
+  padding: 40px;
+}
+
+/* Generic message block */
+.message {
+  display: block;
+}
+
+/* Message content styling */
+.message p {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color-main);
+  text-align: center;
+  padding: 50px;
+}
+
+/* Element hidden by default */
+.return {
+  display: none;
+}
+
+/* Box wrapper for weather data */
+.box {
+  max-width: 400px;
+  height: auto;
+  display: grid;
+  place-content: center;
+  margin: 50px auto;
+}
+
+/* Weather display box */
+.weather-box {
+  height: 200px;
+  max-width: 350px;
+  border-radius: 40px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--font-color-main);
+}
+
+/* Text section inside weather box */
+.name {
+  padding-left: 40px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--white-color);
+  height: auto;
+}
+
+/* City name font size */
+.city-name {
+  font-size: 20px;
+}
+
+/* Temperature text styling */
+.weather-temp {
+  font-size: 60px;
+}
+
+/* Container for weather icon */
+.weather-icon {
+  padding: 0 20px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Weather icon image size */
+.weather-icon img {
+  width: 100%;
+}
+
+/* Row of weather descriptions */
+.weather-desc {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+/* Individual weather description box */
+.desc-box {
+  width: 100px;
+  display: grid;
+  padding: 15px;
+  gap: 5px;
+  height: 110px;
+  margin-top: 10px;
+  border-radius: 20px;
+  justify-content: start;
+  align-items: center;
+  color: var(--white-color);
+  background-color: var(--font-color-main);
+}
+
+/* Submit button (no background) */
+.submit-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  color: var(--font-color-main);
+}
+
+/* Hover effect on submit button */
+.submit-btn:hover {
+  color: #007BFF;
+}
+
+/* Responsive styles for screens wider than 430px */
+@media screen and (min-width: 430px) {
+  /* Constrain and center the main screen */
+  #screen {
+    max-width: 50%;
+    min-width: 450px;
+    height: 100%;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.494);
+    margin-bottom: 120px; /* Add space for fixed nav */
+  }
+
+  /* Style bottom nav inside centered layout */
+  nav {
+    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+  }
+
+  /* Increase max width of weather box wrapper */
+  .box {
+    max-width: 500px;
+  }
+
+  /* Larger weather box */
+  .weather-box {
+    max-width: 400px;
+    height: 200px;
+  }
+
+  /* Larger description boxes */
+  .desc-box {
+    width: 120px;
+    height: 120px;
+  }
+}
