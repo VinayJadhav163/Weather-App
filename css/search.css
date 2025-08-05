@@ -93,6 +93,7 @@ h3 {
   border-radius: 20px;
   justify-content: center;
   align-items: center;
+  margin-left: 8px;
 }
 
 /* Icon size and color */
@@ -250,11 +251,10 @@ h3 {
 }
 
 /* Responsive styles for screens wider than 430px */
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   /* Constrain and center the main screen */
   #screen {
-    max-width: 50%;
-    min-width: 450px;
+    max-width: 480px;
     height: 100%;
     margin: 50px auto;
     border-radius: 20px;

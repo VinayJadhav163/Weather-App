@@ -242,11 +242,10 @@ nav ul li a {
 }
 
 /* ========== Responsive Design for Larger Screens ========== */
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   /* Adjust screen container */
   #screen {
-    max-width: 50%;
-    min-width: 450px;
+    max-width: 480px;
     height: 100%;
     margin: 50px auto;
     border-radius: 20px;

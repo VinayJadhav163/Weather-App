@@ -19,14 +19,36 @@
 /* Body background color */
 body {
   background-color: #B4D6F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
 /* Main screen container */
 #screen {
   background-color: #E0EEFA;
   width: 100%;
-  height: 100%;
+  max-width: 480px; /* Controls the width for all screens */
+  margin: 0 auto;
+  min-height: 100vh;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+.app-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+}
+
+.app-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
 
 /* Navigation styles */
 nav {
@@ -200,10 +222,9 @@ nav ul li a {
 }
 
 /* Responsive styling for larger screens */
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 768px) {
   #screen {
-    max-width: 50%;
-    min-width: 450px;
+    max-width: 480px;
     height: 100%;
     margin: 50px auto;
     border-radius: 20px;
