@@ -41,3 +41,37 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/VinayJadhav163/Weather-App.git
 cd Weather-App
+```
+### 2. Open index.html in your browser
+No installation needed. Just open the file:
+
+```bash
+start index.html
+```
+---
+
+🔑 API Key Setup 
+Create an account on https://openweathermap.org
+
+Generate your API Key
+
+Replace the sample key in your JavaScript file:
+
+```bash
+const apiKey = "your_api_key_here";
+```
+
+---
+
+🧑‍💻 Author
+Made with ❤️ by Vinay Jadhav
+
+---
+
+📜 License
+This project is licensed under the MIT License. You are free to use, modify, and distribute this project with attribution.
+---
+
+🌐 Connect with Me
+
+📧 Email: jadhavvinay163@gmail.com
