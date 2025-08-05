@@ -30,13 +30,13 @@ body {
 #screen {
   background-color: #E0EEFA;
   width: 100%;
+  padding: 1rem;
+  min-height: 100vh;
   max-width: 480px; /* Controls the width for all screens */
   margin: 0 auto;
-  min-height: 100vh;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 .app-title {
   text-align: center;
   font-size: 2.5rem;
@@ -58,6 +58,7 @@ nav {
   align-items: center;
   height: 70px;
   background-color: var(--font-color-main);
+  border-radius: 0 0 20px 20px;
 }
 nav ul {
   display: flex;
@@ -221,28 +222,70 @@ nav ul li a {
   font-size: 12px;
 }
 
-/* Responsive styling for larger screens */
+/* Tablets (768px and up) */
 @media screen and (min-width: 768px) {
   #screen {
-    max-width: 480px;
-    height: 100%;
-    margin: 50px auto;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.494);
+    max-width: 650px;
+    padding: 1.5rem;
   }
 
-  nav {
-    border-radius: 0 0 20px 20px;
+  .weather-icon-css img {
+    width: 20rem;
   }
 
-  .city-name {
-    margin-top: 20px;
+  .weather-description {
+    justify-content: space-evenly;
   }
 
-  .weather-icon-css {
+  .today-forecast {
+    width: 130px;
+  }
+
+  .future-forecast {
     width: 100%;
-    height: 350px;
-    margin-top: 40px;
+  }
+
+  .weather-forecast-box {
+    width: 90px;
+    height: 110px;
+  }
+}
+
+/* Laptops/Desktops (1024px and up) */
+@media screen and (min-width: 1024px) {
+  #screen {
+  background-color: #E0EEFA;
+  width: 100%;
+  padding: 1rem;
+  min-height: 100vh;
+  max-width: 480px; /* Controls the width for all screens */
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+  .weather-icon-css img {
+    width: 22rem;
+  }
+
+  .today-forecast {
+    width: 140px;
+  }
+
+  .weather-forecast-box {
+    width: 100px;
+    height: 120px;
+  }
+
+  .weather-description {
+    padding: 0 2rem;
+  }
+}
+
+/* Large Screens (1440px and up) */
+@media screen and (min-width: 1440px) {
+  #screen {
+    max-width: 960px;
   }
 
   .weather-icon-css img {
@@ -250,39 +293,6 @@ nav ul li a {
   }
 
   .weather-description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-  }
-
-  .today-forecast {
-    width: 140px;
-  }
-
-  .forcasts-box {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .future-forecast {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .future-forecast {
-    width: 60%;
-    min-width: 70%;
-  }
-
-  .weather-forecast-box {
-    width: 100px;
-    min-width: 80px;
-    height: 120px;
-    border-radius: 20px;
-    gap: 2px;
-    border: 1px solid var(--font-color-main);
+    padding: 0 3rem;
   }
 }
