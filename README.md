@@ -51,6 +51,7 @@ start index.html
 ---
 
 🔑 API Key Setup 
+
 Create an account on https://openweathermap.org
 
 Generate your API Key
